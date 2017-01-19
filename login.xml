@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+    <EditText
+        android:id="@+id/luname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter Username"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal|italic">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/lpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal|italic" />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:background="#1a3581"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textStyle="normal|bold|italic"
+        android:textSize="20dp" />
+
+    <TextView
+        android:text="Or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="normal|italic" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Twitter Login"
+            android:background="@null"
+            android:layout_width="188dp"
+            android:layout_height="63dp"
+            android:id="@+id/btntwitterlogin"
+            android:layout_margin="10dp"
+            android:drawableLeft="@mipmap/twitter"
+            android:textStyle="bold|italic"
+            android:textAlignment="center" />
+
+        <Button
+            android:text="Register"
+            android:layout_width="0dp"
+            android:layout_height="63dp"
+            android:id="@+id/btnlRegister"
+            android:layout_weight="1"
+            android:background="#1a3581"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"
+            android:textStyle="normal|bold|italic"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
